@@ -73,7 +73,7 @@ namespace LoggingKata
             Console.WriteLine("");
             Console.WriteLine($"{tacoBellOne.Name} and {tacoBellTwo.Name} are the furthest from eachother");
             Console.WriteLine("");
-            Console.WriteLine($"They are {Math.Round(distance / 1609.344)} miles apart");
+            Console.WriteLine($"They are {Math.Round(distance / 1609.344, 1)} miles apart");
             Console.WriteLine(".");
             Console.WriteLine(".");
             Console.WriteLine(".");
@@ -111,7 +111,7 @@ namespace LoggingKata
             Console.WriteLine("");
             Console.WriteLine($"{tacoBellThree.Name} and {tacoBellFour.Name} are closest to eachother");
             Console.WriteLine("");
-            Console.WriteLine($"They are {Math.Round(distanceShort / 1609.344)} miles apart");
+            Console.WriteLine($"They are {Math.Round(distanceShort / 1609.344, 1)} miles apart");
             Console.WriteLine(".");
             Console.WriteLine(".");
             Console.WriteLine(".");
