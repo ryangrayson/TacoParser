@@ -66,8 +66,18 @@ namespace LoggingKata
 
                 }
             }
-
+            Console.WriteLine(".");
+            Console.WriteLine(".");
+            Console.WriteLine(".");
+            Console.WriteLine("----------FURTHEST----------");
+            Console.WriteLine("");
             Console.WriteLine($"{tacoBellOne.Name} and {tacoBellTwo.Name} are the furthest from eachother");
+            Console.WriteLine("");
+            Console.WriteLine($"They are {distance / 1609.344} miles apart");
+            Console.WriteLine(".");
+            Console.WriteLine(".");
+            Console.WriteLine(".");
+
 
             ITrackable tacoBellThree = null;
             ITrackable tacoBellFour = null;
@@ -87,14 +97,25 @@ namespace LoggingKata
                     if (corC.GetDistanceTo(corD) < distanceShort && corC.GetDistanceTo(corD) !=0)
                     {
 
-                        distanceShort = corC.GetDistanceTo(corD) / 1609.344;
+                        distanceShort = corC.GetDistanceTo(corD);
                         tacoBellThree = locC;
                         tacoBellFour = locD;
                     }
 
                 }
             }
+            Console.WriteLine(".");
+            Console.WriteLine(".");
+            Console.WriteLine(".");
+            Console.WriteLine("----------CLOSEST----------");
+            Console.WriteLine("");
             Console.WriteLine($"{tacoBellThree.Name} and {tacoBellFour.Name} are closest to eachother");
+            Console.WriteLine("");
+            Console.WriteLine($"They are {distanceShort / 1609.344} miles apart");
+            Console.WriteLine(".");
+            Console.WriteLine(".");
+            Console.WriteLine(".");
+            Console.WriteLine("==========E N D==========");
 
 
             // Create a new corA Coordinate with your locA's lat and long
